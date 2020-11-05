@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Pokemon Test Project for immfly by Robert Turner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please see my test project listing the "First Pokemon Generation", as outlined in the project description below.
 
-## Available Scripts
+It took me just over a day to complete, include dockerizing the project. I have a lot of experience using Vue.js, but this was my first ever React project, so there was a little bit of a learning curve. I think though, that I have been able to demonstrate my ability to build a clean, solid app in a javascript framework, whilst also showing my ability to learn new skills and ideas and apply them quickly and efficiently. I would hope that this could count in my favour when assessing my potential for the available position.
 
-In the project directory, you can run:
+Please let me know if I can provide anything else to support my application. I would be happy to share some of my other Vue.js projects with you, if you'd like to see.
 
-### `npm start`
+Thank you for taking the time to review my work.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Pokemon test
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Hello. This is the Immfly frontend code test. You have to build a web application listing the **first pokemon generation**.
 
-### `npm test`
+## Features to implement
+### Build and style the main list
+You have to implement the main list like in this image:
+<img align="center" src="https://imgur.com/HNu1wmq.png" style="border: 1px solid black" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Notice that:
+*  The url is **/pokemon**.
+*  When user hovers a pokemon, its background becomes gray.
 
-### `npm run build`
+### Pokemon detail page
+Add the possibility to click on a pokemon and go to the detail page, like in this image:
+<img align="center" src="https://imgur.com/1Mbh6mK.png" style="border: 1px solid black" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Notice that the pokemon detail url is different. It is ``/pokemon/:name``. In the **charizard** example is ``/pokemon/charizard``.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Images
+The images url is ``https://img.pokemondb.net/sprites/black-white/anim/normal/{name}.gif``
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For example:
+* **Charizard** <img align="center" src="https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif"/>
+* **Bulbasaur** <img align="center" src="https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif" />
 
-### `npm run eject`
+### Api Endpoints
+The api base url is ``https://pokeapi.co/api/v2``.
+* **List**: ``/pokemon`` (maybe you have to add the limit parameter on the request to fetch the first generation in only one request).
+* **Detail**: ``/pokemon/:name``.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For example:
+* **Charizard**: ``https://pokeapi.co/api/v2/pokemon/charizard``
+* **Bulbasaur**: ``https://pokeapi.co/api/v2/pokemon/bulbasaur``
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Demo
+You can watch/download the video showing how the app finally should work: <a href="https://mega.nz/file/2JNVlIzb#kmmubCQEUQV0RgZ9dExTC64P_9eDNBPE8zgNNS-b0do" target="_blank">demo</a>.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧐 We want to see 🧐
+- React knowledge
+- Project architecture
+- Css skills
+- ECMAScript6 skills
+- Clean code
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ✅ You should ✅
+- Use the **axios** package for http requests.
+- **Prevent unknown urls** while redirecting to the list page.
 
-## Learn More
+## 🚫 You should not 🚫
+- Use Typescript.
+- Use bootstrap.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌟 Bonus 🌟
+- Add a filter to search pookemon by name
+- Don't use the **create-react-app** npm package to create the project.
+- Use **hooks**.
+- Add **tests**.
+- Show a **loading indicator** while an api request is in progress.
+- Use a **linter**.
+- Custom **webpack** implementation.
+- **Dockerize**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After test completion, use a github repository to share the test with **sonofjavascript**.
